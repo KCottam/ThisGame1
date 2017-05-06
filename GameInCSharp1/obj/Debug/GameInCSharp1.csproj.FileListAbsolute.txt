@@ -1,0 +1,6 @@
+c:\users\kace\documents\visual studio 2017\Projects\GameInCSharp1\GameInCSharp1\bin\Debug\GameInCSharp1.exe.config
+c:\users\kace\documents\visual studio 2017\Projects\GameInCSharp1\GameInCSharp1\bin\Debug\GameInCSharp1.exe
+c:\users\kace\documents\visual studio 2017\Projects\GameInCSharp1\GameInCSharp1\bin\Debug\GameInCSharp1.pdb
+c:\users\kace\documents\visual studio 2017\Projects\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.csprojResolveAssemblyReference.cache
+c:\users\kace\documents\visual studio 2017\Projects\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.exe
+c:\users\kace\documents\visual studio 2017\Projects\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.pdb
