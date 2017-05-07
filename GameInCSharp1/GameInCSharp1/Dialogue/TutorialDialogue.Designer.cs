@@ -70,7 +70,7 @@ namespace GameInCSharp1.Dialogue {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;Edna&gt; Come with me, wont you? I did save your life, afterall..
+        ///   Looks up a localized string similar to &lt;Edna&gt; Come with me, won&apos;t you? I did save your life, afterall..
         /// </summary>
         public static string GameStart1 {
             get {

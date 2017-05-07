@@ -13,6 +13,7 @@ namespace GameInCSharp1.Dialogue
             string playerClassChooser;
             switchloop:
             {
+                Console.Clear();
                 Console.WriteLine(ClassInfo.PickAClass.ClassInfo);
                 Console.WriteLine(ClassInfo.PickAClass.ClassWarrior);
                 Console.WriteLine(ClassInfo.PickAClass.ClassMage);
@@ -23,6 +24,8 @@ namespace GameInCSharp1.Dialogue
                 switch (playerClassChooser)
                 {
                     case "1":
+                        warrior:
+                        Console.Clear();
                         Console.WriteLine(ClassInfo.WarriorAbout.WarriorInfo);
                         Console.WriteLine(ClassInfo.WarriorAbout.WarriorInfo2);
                         Console.WriteLine(ClassInfo.WarriorAbout.WarriorHealthInfo);
@@ -40,9 +43,14 @@ namespace GameInCSharp1.Dialogue
                             Variables.PlayerVariables.HeroCurrentMana = 50;
 
                             Variables.PlayerVariables.HeroExperience = 0;
-                        }
-                        break;
+                            Variables.PlayerVariables.HeroClassName = "WARRIOR";
+                            break;
+                        } //setting stats
+                        else { goto warrior; }
+                        
                     case "2":
+                        mage:
+                        Console.Clear();
                         Console.WriteLine(ClassInfo.MageAbout.MageInfo);
                         Console.WriteLine(ClassInfo.MageAbout.MageHealthInfo);
                         Console.WriteLine(ClassInfo.MageAbout.MageStaminaInfo);
@@ -59,9 +67,14 @@ namespace GameInCSharp1.Dialogue
                             Variables.PlayerVariables.HeroCurrentMana = 175;
 
                             Variables.PlayerVariables.HeroExperience = 0;
-                        }
-                        break;
+                            Variables.PlayerVariables.HeroClassName = "MAGE";
+                            break;
+                        } //setting stats
+                        else { goto mage; }
+                        
                     case "3":
+                        thief:
+                        Console.Clear();
                         Console.WriteLine(ClassInfo.ThiefAbout.ThiefInfo);
                         Console.WriteLine(ClassInfo.ThiefAbout.ThiefHealthInfo);
                         Console.WriteLine(ClassInfo.ThiefAbout.ThiefStaminaInfo);
@@ -78,32 +91,48 @@ namespace GameInCSharp1.Dialogue
                             Variables.PlayerVariables.HeroCurrentMana = 100;
 
                             Variables.PlayerVariables.HeroExperience = 0;
-                        }
-                        break;
+                            Variables.PlayerVariables.HeroClassName = "THIEF";
+                            break;
+                        } //setting stats
+                        else { goto thief; }
+                        
                     default:
+                        Console.Clear();
                         Console.WriteLine(ClassInfo.PickAClass.Default);
                         Console.WriteLine();
                         goto switchloop;
                 }//end switch
-            }//end siwtch loop
+            }//end switch loop
         }//end playerChooseClass()
 
         private static bool AreYouSure(Variables.PlayerVariables.HeroClass hero)
         {
-        switchloop:
+        //switchloop:
             {
                 Console.WriteLine("Are you sure you want to be {0}?",hero);
                 Console.WriteLine("<Please type 'YES' or 'NO'>");
-                string YesOrNo;
-                YesOrNo = Console.ReadLine();
+                string YesOrNo = null;
+                YesOrNo = Console.ReadLine().ToUpper();
                 switch(YesOrNo)
                 {
-                    case "YES": Console.WriteLine("You are now a {0}", hero); Console.WriteLine(); return true;
-                    case "NO": Console.WriteLine(""); PlayerChooseClass(); Console.WriteLine(); return false;
+                    case "YES":
+                        Console.Clear();
+                        //Console.WriteLine();
+                        Console.WriteLine("You are now a {0}", hero);
+                        //Console.WriteLine();
+                        return true;
+                    case "NO":
+                        Console.Clear();
+                        //Console.WriteLine();
+                        PlayerChooseClass();
+                        Console.WriteLine();
+                        return false;
                     default:
+                        //Console.Clear();
+                        Console.WriteLine();
                         Console.WriteLine("That is not a valid answer.");
                         Console.WriteLine();
-                        goto switchloop;
+                        return false;
                 }// end switch
             }//end switch loop
         }// end AreYouSure()

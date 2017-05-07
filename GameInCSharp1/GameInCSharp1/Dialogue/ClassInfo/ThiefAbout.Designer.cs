@@ -70,7 +70,7 @@ namespace GameInCSharp1.Dialogue.ClassInfo {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The thief is wellrounded..
+        ///   Looks up a localized string similar to The thief is well-rounded..
         /// </summary>
         internal static string ThiefInfo {
             get {

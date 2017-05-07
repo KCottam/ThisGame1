@@ -122,7 +122,7 @@
     <comment>break</comment>
   </data>
   <data name="GameStart1" xml:space="preserve">
-    <value>&lt;Edna&gt; Come with me, wont you? I did save your life, afterall.</value>
+    <value>&lt;Edna&gt; Come with me, won't you? I did save your life, afterall.</value>
     <comment>&lt;PAIRED&gt;</comment>
   </data>
   <data name="GameStart2" xml:space="preserve">

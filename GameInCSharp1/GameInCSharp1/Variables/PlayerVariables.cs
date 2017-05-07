@@ -16,6 +16,7 @@ namespace GameInCSharp1.Variables
         public static int HeroMaxMana { get; set; }
         public static int HeroCurrentMana { get; set; }
         public static int HeroExperience { get; set; }
+        public static string HeroClassName { get; set; }
         public enum HeroClass
         {
             Warrior,

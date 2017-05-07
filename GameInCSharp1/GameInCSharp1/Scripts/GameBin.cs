@@ -13,25 +13,38 @@ namespace GameInCSharp1
             //<editor-fold desc="Tutorial Phase">
             Console.WriteLine(Dialogue.TutorialDialogue.HelloMessage);
             InputLine();
-            Console.WriteLine(Dialogue.TutorialDialogue.NameAsking);
+            Console.Clear();
 
+            Console.WriteLine(Dialogue.TutorialDialogue.NameAsking);
             Console.Write(Dialogue.TutorialDialogue.NameAskingPrompt);
             Variables.PlayerVariables.HeroName = Console.ReadLine();
-            Console.WriteLine();
+            Console.Clear();
+            //Console.WriteLine();
 
             Console.WriteLine(Dialogue.TutorialDialogue.HelloName, Variables.PlayerVariables.HeroName);
-            Console.WriteLine(Dialogue.TutorialDialogue.ClassAsking);
-            Dialogue.TutorialDialogueClass.PlayerChooseClass();
+            Console.WriteLine();
 
-            Console.ReadLine(); //wait at end
+            Console.WriteLine(Dialogue.TutorialDialogue.ClassAsking); //class ask
+            InputLine();
+            Dialogue.TutorialDialogueClass.PlayerChooseClass();
+            Console.WriteLine(Dialogue.TutorialDialogue.SmallTalk1, Variables.PlayerVariables.HeroClassName.ToLower());
+            InputLine();
+            Console.Clear();
+
+            Console.WriteLine(Dialogue.TutorialDialogue.GameStart1);
+            Console.WriteLine(Dialogue.TutorialDialogue.GameStart2);
+            Console.WriteLine(Dialogue.TutorialDialogue.GameStart3);
+            //InputLine();
+            //Console.Clear();
+
             //</editor-fold>
         }
 
         private static void InputLine()
         {
-            Console.WriteLine("<Please press any key.>");
-            Console.WriteLine();
-            Console.ReadKey();
+            Console.WriteLine("<Please press enter.>");
+            //Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }

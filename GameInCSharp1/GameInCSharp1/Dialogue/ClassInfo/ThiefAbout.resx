@@ -121,7 +121,7 @@
     <value>His max health is 100.</value>
   </data>
   <data name="ThiefInfo" xml:space="preserve">
-    <value>The thief is wellrounded.</value>
+    <value>The thief is well-rounded.</value>
   </data>
   <data name="ThiefManaInfo" xml:space="preserve">
     <value>His max mana is 100.</value>
