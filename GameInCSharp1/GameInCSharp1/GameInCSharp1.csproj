@@ -42,10 +42,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dialogue\PickAClass.Designer.cs">
+    <Compile Include="Dialogue\Class Info\PickAClass.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PickAClass.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogue\Class Info\ThiefInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThiefInfo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogue\Class Info\MageInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MageInfo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogue\Class Info\WarriorInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarriorInfo.resx</DependentUpon>
     </Compile>
     <Compile Include="Dialogue\TutorialDialogue.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -62,9 +77,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dialogue\PickAClass.resx">
+    <EmbeddedResource Include="Dialogue\Class Info\PickAClass.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PickAClass.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogue\Class Info\ThiefInfo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ThiefInfo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogue\Class Info\MageInfo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MageInfo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogue\Class Info\WarriorInfo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WarriorInfo.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogue\TutorialDialogue.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

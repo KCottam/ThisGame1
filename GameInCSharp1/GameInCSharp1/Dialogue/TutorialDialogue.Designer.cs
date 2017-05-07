@@ -61,83 +61,83 @@ namespace GameInCSharp1.Dialogue {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;Unknown&gt; Hello. Welcome to the world of [PH]Narnia..
-        /// </summary>
-        public static string Tut1 {
-            get {
-                return ResourceManager.GetString("Tut1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;Unknown&gt; May I have your name?.
-        /// </summary>
-        public static string Tut2 {
-            get {
-                return ResourceManager.GetString("Tut2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;Unknown&gt; Enter your name:.
-        /// </summary>
-        public static string Tut3 {
-            get {
-                return ResourceManager.GetString("Tut3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;Unknown&gt; Hello, {0}.
-        /// </summary>
-        public static string Tut4 {
-            get {
-                return ResourceManager.GetString("Tut4", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;Edna&gt; I am Edna. A witch. What are you?.
         /// </summary>
-        public static string Tut5 {
+        public static string ClassAsking {
             get {
-                return ResourceManager.GetString("Tut5", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;Edna&gt; A {0}, huh? Fascinating. I have never seen one in my long life..
-        /// </summary>
-        public static string Tut6 {
-            get {
-                return ResourceManager.GetString("Tut6", resourceCulture);
+                return ResourceManager.GetString("ClassAsking", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;Edna&gt; Come with me, wont you? I did save your life, afterall..
         /// </summary>
-        public static string Tut71 {
+        public static string GameStart1 {
             get {
-                return ResourceManager.GetString("Tut71", resourceCulture);
+                return ResourceManager.GetString("GameStart1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to And now we need to save something else....
         /// </summary>
-        public static string Tut72 {
+        public static string GameStart2 {
             get {
-                return ResourceManager.GetString("Tut72", resourceCulture);
+                return ResourceManager.GetString("GameStart2", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The World..
         /// </summary>
-        public static string Tut73 {
+        public static string GameStart3 {
             get {
-                return ResourceManager.GetString("Tut73", resourceCulture);
+                return ResourceManager.GetString("GameStart3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Unknown&gt; Hello. Welcome to the world of [PH]Narnia..
+        /// </summary>
+        public static string HelloMessage {
+            get {
+                return ResourceManager.GetString("HelloMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Unknown&gt; Hello, {0}..
+        /// </summary>
+        public static string HelloName {
+            get {
+                return ResourceManager.GetString("HelloName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Unknown&gt; May I have your name?.
+        /// </summary>
+        public static string NameAsking {
+            get {
+                return ResourceManager.GetString("NameAsking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Unknown&gt; Enter your name: .
+        /// </summary>
+        public static string NameAskingPrompt {
+            get {
+                return ResourceManager.GetString("NameAskingPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Edna&gt; A {0}, huh? Fascinating. I have never seen one in my long life..
+        /// </summary>
+        public static string SmallTalk1 {
+            get {
+                return ResourceManager.GetString("SmallTalk1", resourceCulture);
             }
         }
     }

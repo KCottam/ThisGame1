@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GameInCSharp1.Dialogue {
+namespace GameInCSharp1.Dialogue.Class_Info {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace GameInCSharp1.Dialogue {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class PickAClass {
+    internal class ThiefInfo {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal PickAClass() {
+        internal ThiefInfo() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GameInCSharp1.Dialogue {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.Dialogue.PickAClass", typeof(PickAClass).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.Dialogue.Class_Info.ThiefInfo", typeof(ThiefInfo).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,47 +61,38 @@ namespace GameInCSharp1.Dialogue {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please pick a class by pressing one of the following numbers..
+        ///   Looks up a localized string similar to His max health is 100..
         /// </summary>
-        internal static string ClassInfo {
+        internal static string ThiefHealthInfo {
             get {
-                return ResourceManager.GetString("ClassInfo", resourceCulture);
+                return ResourceManager.GetString("ThiefHealthInfo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2) Mage.
+        ///   Looks up a localized string similar to The thief is wellrounded..
         /// </summary>
-        internal static string ClassMage {
+        internal static string ThiefInfo {
             get {
-                return ResourceManager.GetString("ClassMage", resourceCulture);
+                return ResourceManager.GetString("ThiefInfo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 3) Thief.
+        ///   Looks up a localized string similar to His max mana is 100..
         /// </summary>
-        internal static string ClassThief {
+        internal static string ThiefManaInfo {
             get {
-                return ResourceManager.GetString("ClassThief", resourceCulture);
+                return ResourceManager.GetString("ThiefManaInfo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1) Warrior.
+        ///   Looks up a localized string similar to His max stamina is 100..
         /// </summary>
-        internal static string ClassWarrior {
+        internal static string ThiefStaminaInfo {
             get {
-                return ResourceManager.GetString("ClassWarrior", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This is not a valid class. Please try again..
-        /// </summary>
-        internal static string Default {
-            get {
-                return ResourceManager.GetString("Default", resourceCulture);
+                return ResourceManager.GetString("ThiefStaminaInfo", resourceCulture);
             }
         }
     }

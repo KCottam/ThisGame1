@@ -117,38 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ClassAsking" xml:space="preserve">
-    <value>&lt;Edna&gt; I am Edna. A witch. What are you?</value>
-    <comment>break</comment>
+  <data name="MageHealthInfo" xml:space="preserve">
+    <value>His max health is 75.</value>
   </data>
-  <data name="GameStart1" xml:space="preserve">
-    <value>&lt;Edna&gt; Come with me, wont you? I did save your life, afterall.</value>
-    <comment>&lt;PAIRED&gt;</comment>
+  <data name="MageInfo" xml:space="preserve">
+    <value>The mage is weak, but makes up for it based on his many damaging abilities.</value>
   </data>
-  <data name="GameStart2" xml:space="preserve">
-    <value>And now we need to save something else...</value>
-    <comment>&lt;PAIRED&gt;</comment>
+  <data name="MageManaInfo" xml:space="preserve">
+    <value>His max mana is 175.</value>
   </data>
-  <data name="GameStart3" xml:space="preserve">
-    <value>The World.</value>
-    <comment>&lt;PAIRED&gt;</comment>
-  </data>
-  <data name="HelloMessage" xml:space="preserve">
-    <value>&lt;Unknown&gt; Hello. Welcome to the world of [PH]Narnia.</value>
-  </data>
-  <data name="HelloName" xml:space="preserve">
-    <value>&lt;Unknown&gt; Hello, {0}.</value>
-    <comment>Console.WriteLine(,heroName)</comment>
-  </data>
-  <data name="NameAsking" xml:space="preserve">
-    <value>&lt;Unknown&gt; May I have your name?</value>
-  </data>
-  <data name="NameAskingPrompt" xml:space="preserve">
-    <value>&lt;Unknown&gt; Enter your name: </value>
-    <comment>Console.Write()</comment>
-  </data>
-  <data name="SmallTalk1" xml:space="preserve">
-    <value>&lt;Edna&gt; A {0}, huh? Fascinating. I have never seen one in my long life.</value>
-    <comment>Console.WriteLine(,heroClass)</comment>
+  <data name="MageStaminaInfo" xml:space="preserve">
+    <value>His max stamina is 50.</value>
   </data>
 </root>

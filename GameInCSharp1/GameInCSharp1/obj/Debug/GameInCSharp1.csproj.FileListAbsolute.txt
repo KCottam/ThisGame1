@@ -12,3 +12,12 @@ C:\Users\Kace\Documents\Visual Studio 2017\Projects\GameInCSharp1\GameInCSharp1\
 C:\Users\Kace\Documents\Visual Studio 2017\Projects\GameInCSharp1\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.csproj.GenerateResource.Cache
 C:\Users\Kace\Documents\Visual Studio 2017\Projects\GameInCSharp1\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.exe
 C:\Users\Kace\Documents\Visual Studio 2017\Projects\GameInCSharp1\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.pdb
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\bin\Debug\GameInCSharp1.exe.config
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\bin\Debug\GameInCSharp1.exe
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\bin\Debug\GameInCSharp1.pdb
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.csprojResolveAssemblyReference.cache
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.Dialogue.PickAClass.resources
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.Dialogue.TutorialDialogue.resources
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.csproj.GenerateResource.Cache
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.exe
+C:\Users\Kace\Source\Repos\ThisGame12\GameInCSharp1\GameInCSharp1\obj\Debug\GameInCSharp1.pdb

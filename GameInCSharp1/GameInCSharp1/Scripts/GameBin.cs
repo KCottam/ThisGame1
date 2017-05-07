@@ -11,15 +11,15 @@ namespace GameInCSharp1
         public GameBin()
         {
             //<editor-fold desc="Tutorial Phase">
-            Console.WriteLine(Dialogue.TutorialDialogueClass.TutorialDialogue[0]);
-            Console.WriteLine(Dialogue.TutorialDialogue.Tut1);
+            Console.WriteLine(Dialogue.TutorialDialogue.HelloMessage);
             InputLine();
-            Console.WriteLine(Dialogue.TutorialDialogueClass.TutorialDialogue[1]);
-            InputLine();
-            Console.Write(Dialogue.TutorialDialogueClass.TutorialDialogue[2]);
+            Console.WriteLine(Dialogue.TutorialDialogue.NameAsking);
+
+            Console.Write(Dialogue.TutorialDialogue.NameAskingPrompt);
             Variables.PlayerVariables.HeroName = Console.ReadLine();
-            Console.WriteLine(Dialogue.TutorialDialogueClass.TutorialDialogue[3], Variables.PlayerVariables.HeroName);
-            Console.WriteLine(Dialogue.TutorialDialogueClass.TutorialDialogue[4]);
+
+            Console.WriteLine(Dialogue.TutorialDialogue.HelloName, Variables.PlayerVariables.HeroName);
+            Console.WriteLine(Dialogue.TutorialDialogue.ClassAsking);
 
 
             Console.ReadLine(); //wait at end
