@@ -62,15 +62,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WarriorAbout.resx</DependentUpon>
     </Compile>
+    <Compile Include="Dialogue\ReturningToTownDialogue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReturningToTownDialogue.resx</DependentUpon>
+    </Compile>
     <Compile Include="Dialogue\TutorialDialogue.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TutorialDialogue.resx</DependentUpon>
     </Compile>
     <Compile Include="Dialogue\TutorialDialogueClass.cs" />
+    <Compile Include="Scripts\Battle\BattleSequence.cs" />
     <Compile Include="Scripts\GameBin.cs" />
     <Compile Include="Scripts\MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Variables\Monsters\BaseMonster.cs" />
+    <Compile Include="Variables\Monsters\Goblin.cs" />
     <Compile Include="Variables\PlayerVariables.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +100,10 @@
     <EmbeddedResource Include="Dialogue\ClassInfo\WarriorAbout.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>WarriorAbout.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogue\ReturningToTownDialogue.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReturningToTownDialogue.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogue\TutorialDialogue.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

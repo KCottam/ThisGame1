@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameInCSharp1.Scripts.Battle;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,45 @@ namespace GameInCSharp1
     {
         public GameBin()
         {
-            //<editor-fold desc="Tutorial Phase">
+            AssignPlayerClass();
+
+            Console.WriteLine(Dialogue.ReturningToTownDialogue.ReturnHome);
+            InputLine();
+            Console.Clear();
+
+            Console.WriteLine(Dialogue.ReturningToTownDialogue.HealYourself);
+            InputLine();
+            Console.Clear();
+
+            Console.WriteLine("You have been healed!"); //to be replaced with text from staying in home.
+            InputLine();
+            Console.Clear();
+
+            Console.WriteLine(Dialogue.ReturningToTownDialogue.CommenceTravel);
+            InputLine();
+            Console.Clear();
+
+            Console.WriteLine(Dialogue.ReturningToTownDialogue.SettingDescription);
+            InputLine();
+            Console.Clear();
+
+            Console.WriteLine(Dialogue.ReturningToTownDialogue.SoundNotification);
+            InputLine();
+            Console.Clear();
+
+            Console.WriteLine(Dialogue.ReturningToTownDialogue.GoblinsAppear);
+            InputLine();
+            Console.Clear();
+
+            Console.WriteLine(Dialogue.ReturningToTownDialogue.EdnaGoblinExclamation);
+            InputLine();
+            Console.Clear();
+
+            BattleSequence battle = new BattleSequence();
+        }
+
+        private static void AssignPlayerClass()
+        {
             Console.WriteLine(Dialogue.TutorialDialogue.HelloMessage);
             InputLine();
             Console.Clear();
@@ -19,13 +58,13 @@ namespace GameInCSharp1
             Console.Write(Dialogue.TutorialDialogue.NameAskingPrompt);
             Variables.PlayerVariables.HeroName = Console.ReadLine();
             Console.Clear();
-            //Console.WriteLine();
 
             Console.WriteLine(Dialogue.TutorialDialogue.HelloName, Variables.PlayerVariables.HeroName);
             Console.WriteLine();
 
-            Console.WriteLine(Dialogue.TutorialDialogue.ClassAsking); //class ask
+            Console.WriteLine(Dialogue.TutorialDialogue.ClassAsking);
             InputLine();
+
             Dialogue.TutorialDialogueClass.PlayerChooseClass();
             Console.WriteLine(Dialogue.TutorialDialogue.SmallTalk1, Variables.PlayerVariables.HeroClassName.ToLower());
             InputLine();
@@ -34,16 +73,15 @@ namespace GameInCSharp1
             Console.WriteLine(Dialogue.TutorialDialogue.GameStart1);
             Console.WriteLine(Dialogue.TutorialDialogue.GameStart2);
             Console.WriteLine(Dialogue.TutorialDialogue.GameStart3);
-            //InputLine();
-            //Console.Clear();
 
-            //</editor-fold>
+            Console.WriteLine();
+            InputLine();
+            Console.Clear();
         }
 
         private static void InputLine()
         {
             Console.WriteLine("<Please press enter.>");
-            //Console.WriteLine();
             Console.ReadLine();
         }
     }
