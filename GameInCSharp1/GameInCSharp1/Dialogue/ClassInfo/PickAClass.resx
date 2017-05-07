@@ -132,4 +132,7 @@
   <data name="Default" xml:space="preserve">
     <value>This is not a valid class. Please try again.</value>
   </data>
+  <data name="EnterANumber" xml:space="preserve">
+    <value>Enter a number: </value>
+  </data>
 </root>

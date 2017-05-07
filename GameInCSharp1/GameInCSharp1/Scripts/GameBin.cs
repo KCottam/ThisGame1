@@ -17,18 +17,20 @@ namespace GameInCSharp1
 
             Console.Write(Dialogue.TutorialDialogue.NameAskingPrompt);
             Variables.PlayerVariables.HeroName = Console.ReadLine();
+            Console.WriteLine();
 
             Console.WriteLine(Dialogue.TutorialDialogue.HelloName, Variables.PlayerVariables.HeroName);
             Console.WriteLine(Dialogue.TutorialDialogue.ClassAsking);
-
+            Dialogue.TutorialDialogueClass.PlayerChooseClass();
 
             Console.ReadLine(); //wait at end
             //</editor-fold>
         }
 
-        private void InputLine()
+        private static void InputLine()
         {
             Console.WriteLine("<Please press any key.>");
+            Console.WriteLine();
             Console.ReadKey();
         }
     }

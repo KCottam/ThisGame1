@@ -42,25 +42,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dialogue\Class Info\PickAClass.Designer.cs">
+    <Compile Include="Dialogue\ClassInfo\PickAClass.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PickAClass.resx</DependentUpon>
     </Compile>
-    <Compile Include="Dialogue\Class Info\ThiefInfo.Designer.cs">
+    <Compile Include="Dialogue\ClassInfo\ThiefAbout.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ThiefInfo.resx</DependentUpon>
+      <DependentUpon>ThiefAbout.resx</DependentUpon>
     </Compile>
-    <Compile Include="Dialogue\Class Info\MageInfo.Designer.cs">
+    <Compile Include="Dialogue\ClassInfo\MageAbout.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MageInfo.resx</DependentUpon>
+      <DependentUpon>MageAbout.resx</DependentUpon>
     </Compile>
-    <Compile Include="Dialogue\Class Info\WarriorInfo.Designer.cs">
+    <Compile Include="Dialogue\ClassInfo\WarriorAbout.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>WarriorInfo.resx</DependentUpon>
+      <DependentUpon>WarriorAbout.resx</DependentUpon>
     </Compile>
     <Compile Include="Dialogue\TutorialDialogue.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -77,21 +77,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dialogue\Class Info\PickAClass.resx">
+    <EmbeddedResource Include="Dialogue\ClassInfo\PickAClass.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PickAClass.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogue\Class Info\ThiefInfo.resx">
+    <EmbeddedResource Include="Dialogue\ClassInfo\ThiefAbout.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ThiefInfo.Designer.cs</LastGenOutput>
+      <LastGenOutput>ThiefAbout.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogue\Class Info\MageInfo.resx">
+    <EmbeddedResource Include="Dialogue\ClassInfo\MageAbout.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>MageInfo.Designer.cs</LastGenOutput>
+      <LastGenOutput>MageAbout.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogue\Class Info\WarriorInfo.resx">
+    <EmbeddedResource Include="Dialogue\ClassInfo\WarriorAbout.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>WarriorInfo.Designer.cs</LastGenOutput>
+      <LastGenOutput>WarriorAbout.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogue\TutorialDialogue.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GameInCSharp1.Dialogue.Class_Info {
+namespace GameInCSharp1.Dialogue.ClassInfo {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace GameInCSharp1.Dialogue.Class_Info {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class PickAClass {
+    internal class WarriorAbout {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal PickAClass() {
+        internal WarriorAbout() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GameInCSharp1.Dialogue.Class_Info {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.Dialogue.Class_Info.PickAClass", typeof(PickAClass).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.Dialogue.ClassInfo.WarriorAbout", typeof(WarriorAbout).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,47 +61,47 @@ namespace GameInCSharp1.Dialogue.Class_Info {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please pick a class by pressing one of the following numbers..
+        ///   Looks up a localized string similar to His max health is 150, the highest of all of the classes..
         /// </summary>
-        internal static string ClassInfo {
+        internal static string WarriorHealthInfo {
             get {
-                return ResourceManager.GetString("ClassInfo", resourceCulture);
+                return ResourceManager.GetString("WarriorHealthInfo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2) Mage.
+        ///   Looks up a localized string similar to The warrior is strong, able to withstand numerous injuries..
         /// </summary>
-        internal static string ClassMage {
+        internal static string WarriorInfo {
             get {
-                return ResourceManager.GetString("ClassMage", resourceCulture);
+                return ResourceManager.GetString("WarriorInfo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 3) Thief.
+        ///   Looks up a localized string similar to He is also hard-hitting, but lacks on the magical spectrum of the world..
         /// </summary>
-        internal static string ClassThief {
+        internal static string WarriorInfo2 {
             get {
-                return ResourceManager.GetString("ClassThief", resourceCulture);
+                return ResourceManager.GetString("WarriorInfo2", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1) Warrior.
+        ///   Looks up a localized string similar to His max mana is a mere 50..
         /// </summary>
-        internal static string ClassWarrior {
+        internal static string WarriorManaInfo {
             get {
-                return ResourceManager.GetString("ClassWarrior", resourceCulture);
+                return ResourceManager.GetString("WarriorManaInfo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is not a valid class. Please try again..
+        ///   Looks up a localized string similar to His max stamina is 100..
         /// </summary>
-        internal static string Default {
+        internal static string WarriorStaminaInfo {
             get {
-                return ResourceManager.GetString("Default", resourceCulture);
+                return ResourceManager.GetString("WarriorStaminaInfo", resourceCulture);
             }
         }
     }
