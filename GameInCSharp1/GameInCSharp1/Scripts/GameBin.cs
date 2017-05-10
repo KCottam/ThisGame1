@@ -1,5 +1,4 @@
-﻿using GameInCSharp1.Scripts.Battle;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +12,14 @@ namespace GameInCSharp1
         {
             AssignPlayerClass();
 
+            ReturningToTownBeforeFight();
+
+            Scripts.Battle.BattleSequence battle = new Scripts.Battle.BattleSequence("Goblin Boss",100,13);
+            InputLine();
+        }
+
+        private static void ReturningToTownBeforeFight()
+        {
             Console.WriteLine(Dialogue.ReturningToTownDialogue.ReturnHome);
             InputLine();
             Console.Clear();
@@ -44,8 +51,6 @@ namespace GameInCSharp1
             Console.WriteLine(Dialogue.ReturningToTownDialogue.EdnaGoblinExclamation);
             InputLine();
             Console.Clear();
-
-            BattleSequence battle = new BattleSequence();
         }
 
         private static void AssignPlayerClass()
@@ -54,10 +59,16 @@ namespace GameInCSharp1
             InputLine();
             Console.Clear();
 
-            Console.WriteLine(Dialogue.TutorialDialogue.NameAsking);
-            Console.Write(Dialogue.TutorialDialogue.NameAskingPrompt);
-            Variables.PlayerVariables.HeroName = Console.ReadLine();
-            Console.Clear();
+            do
+            {
+                Console.WriteLine(Dialogue.TutorialDialogue.NameAsking);
+
+                Console.Write(Dialogue.TutorialDialogue.NameAskingPrompt);
+
+                Variables.PlayerVariables.HeroName = Console.ReadLine();
+                Console.Clear();
+
+            } while (Variables.PlayerVariables.HeroName == "");
 
             Console.WriteLine(Dialogue.TutorialDialogue.HelloName, Variables.PlayerVariables.HeroName);
             Console.WriteLine();
