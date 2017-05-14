@@ -96,6 +96,7 @@ namespace GameInCSharp1.Dialogue
 
             Variables.PlayerVariables.HeroExperience = 0;
             Variables.PlayerVariables.HeroClassName = "THIEF";
+            Variables.PlayerVariables.HeroDamage = 15;
         }
 
         private static void DisplayThiefInformation()
@@ -120,6 +121,7 @@ namespace GameInCSharp1.Dialogue
 
             Variables.PlayerVariables.HeroExperience = 0;
             Variables.PlayerVariables.HeroClassName = "MAGE";
+            Variables.PlayerVariables.HeroDamage = 15;
         }
 
         private static void DisplayMageInformation()
@@ -144,6 +146,7 @@ namespace GameInCSharp1.Dialogue
 
             Variables.PlayerVariables.HeroExperience = 0;
             Variables.PlayerVariables.HeroClassName = "WARRIOR";
+            Variables.PlayerVariables.HeroDamage = 20;
         }
 
         private static void DisplayWarriorInformation()
