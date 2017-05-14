@@ -25,6 +25,11 @@ namespace GameInCSharp1.Scripts.Battle
             monsterDamage = monsterDamageIn;
 
             Variables.Monsters.Monster monster = new Variables.Monsters.Monster(monsterName, monsterDamage, monsterHealth);
+            BattleStart();
+        }
+
+        private void BattleStart()
+        {
             Console.Clear();
             Console.WriteLine(BattleText.EngagedInCombat, monsterName);
             InputLine();
@@ -40,10 +45,11 @@ namespace GameInCSharp1.Scripts.Battle
                 DoMonsterAttack();
                 turn++;
             } while (BattleIsOver != true);
-            if(Variables.PlayerVariables.HeroCurrentHealth <= 0)
+            if (Variables.PlayerVariables.HeroCurrentHealth <= 0)
             {
                 Console.WriteLine("You have died.");
-            } else
+            }
+            else
             {
                 Console.WriteLine("You have won!");
             }
