@@ -12,9 +12,11 @@ namespace GameInCSharp1
         {
             AssignPlayerClass();
 
-            ReturningToTownBeforeFight();
+            Console.WriteLine("DEBUG SKIP");
+            InputLine();
+            //ReturningToTownBeforeFight();
 
-            Scripts.Battle.BattleSequence battle = new Scripts.Battle.BattleSequence("Goblin Boss",100,13);
+            Scripts.Battle.BattleSequence battle = new Scripts.Battle.BattleSequence("Goblin Boss",500,15);
             InputLine();
         }
 

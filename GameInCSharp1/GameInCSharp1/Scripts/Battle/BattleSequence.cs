@@ -16,6 +16,7 @@ namespace GameInCSharp1.Scripts.Battle
         bool BattleIsOver = false;
         int turn = 1;
         int playerSpecial = 1;
+        Random damageModifier = new Random();
         public BattleSequence(string monsterNameIn, int monsterHealthIn, int monsterDamageIn)
         {
             //            File.Create("BattleQueue.txt");
@@ -58,20 +59,22 @@ namespace GameInCSharp1.Scripts.Battle
             Console.WriteLine(BattleText.monsterHealth, monsterName, monsterHealth);
         }
         private void DoMonsterAttack()
-        { 
+        {
+            
+            int rnd = damageModifier.Next(-monsterDamage / 2, monsterDamage / 2);
             if (turn % 10 == 0)
             {
-                monsterHealth += monsterDamage * 2;
+                monsterHealth += (monsterDamage+rnd) * 2;
                 
-                Console.WriteLine("{0} heals itself for {1} health!",monsterName,monsterDamage*2);
+                Console.WriteLine("{0} heals itself for {1} health!",monsterName,(monsterDamage+rnd)*2);
                 InputLine();
                 Console.Clear();
             }
             else if (turn % 3 == 0)
             {
-                Variables.PlayerVariables.HeroCurrentHealth -= monsterDamage * 15/10;
+                Variables.PlayerVariables.HeroCurrentHealth -= (monsterDamage+rnd) * 15/10;
                 Console.WriteLine("{0} launches a special attack!", monsterName);
-                Console.WriteLine("You take {0} damage!", monsterDamage * 15/10);
+                Console.WriteLine("You take {0} damage!", (monsterDamage+rnd) * 15/10);
                 InputLine();
                 Console.Clear();
                 if (Variables.PlayerVariables.HeroCurrentHealth <= 0)
@@ -81,8 +84,8 @@ namespace GameInCSharp1.Scripts.Battle
             }
             else if (turn % 1 == 0)
             {
-                Variables.PlayerVariables.HeroCurrentHealth -= monsterDamage;
-                Console.WriteLine("You have been hit for {0} damage!", monsterDamage);
+                Variables.PlayerVariables.HeroCurrentHealth -= (monsterDamage+rnd);
+                Console.WriteLine("You have been hit for {0} damage!", (monsterDamage+rnd));
                 InputLine();
                 Console.Clear();
                 if (Variables.PlayerVariables.HeroCurrentHealth <= 0)
@@ -108,6 +111,7 @@ namespace GameInCSharp1.Scripts.Battle
                 switch (playerChoice)
                 {
                     case "1":
+                        int rnd = damageModifier.Next(-Variables.PlayerVariables.HeroDamage / 2, Variables.PlayerVariables.HeroDamage / 2);
                         if (Variables.PlayerVariables.HeroCurrentStamina - 25 < 0)
                         {
                             Console.WriteLine("You are out of stamina!");
@@ -120,14 +124,14 @@ namespace GameInCSharp1.Scripts.Battle
                             if (playerSpecial % 5 == 0)
                             {
                                 Variables.PlayerVariables.HeroCurrentStamina -= 25;
-                                monsterHealth -= Variables.PlayerVariables.HeroDamage*3;
+                                monsterHealth -= (Variables.PlayerVariables.HeroDamage+rnd)*3;
                                 if (monsterHealth <= 0)
                                 {
                                     BattleIsOver = true;
                                 }
                                 Variables.PlayerVariables.HeroCurrentMana += 50;
                                 Console.WriteLine("You did a special attack!");
-                                Console.WriteLine("You hit {0} for {1} damage!", monsterName, Variables.PlayerVariables.HeroDamage*3);
+                                Console.WriteLine("You hit {0} for {1} damage!", monsterName, (rnd+Variables.PlayerVariables.HeroDamage)*3);
 
                                 if (Variables.PlayerVariables.HeroCurrentMana > Variables.PlayerVariables.HeroMaxMana)
                                 {
@@ -138,13 +142,13 @@ namespace GameInCSharp1.Scripts.Battle
                             else if (playerSpecial % 1 == 0)
                             {
                                 Variables.PlayerVariables.HeroCurrentStamina -= 25;
-                                monsterHealth -= Variables.PlayerVariables.HeroDamage;
+                                monsterHealth -= (Variables.PlayerVariables.HeroDamage+rnd);
                                 if (monsterHealth <= 0)
                                 {
                                     BattleIsOver = true;
                                 }
                                 Variables.PlayerVariables.HeroCurrentMana += 50;
-                                Console.WriteLine("You hit {0} for {1} damage!", monsterName, Variables.PlayerVariables.HeroDamage);
+                                Console.WriteLine("You hit {0} for {1} damage!", monsterName, (Variables.PlayerVariables.HeroDamage+rnd));
 
                                 if (Variables.PlayerVariables.HeroCurrentMana > Variables.PlayerVariables.HeroMaxMana)
                                 {
