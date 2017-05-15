@@ -32,10 +32,13 @@ namespace GameInCSharp1.GUI
             listPanel.Add(MainMenuPane);
             listPanel.Add(LoadGamePane);
             listPanel.Add(CharacterCreationPane);
+            listPanel.Add(DialoguePane);
             for (int i = 0; i < listPanel.Count; i++)
             {
                 listPanel[i].Visible = false;
+                listPanel[i].Location = new Point(0, 0);
             }
+            this.Size = new Size(width: 400, height: 340);
             listPanel[0].Visible = true;
         }
 
