@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +75,17 @@
       <DependentUpon>TutorialDialogue.resx</DependentUpon>
     </Compile>
     <Compile Include="Dialogue\TutorialDialogueClass.cs" />
+    <Compile Include="GUI\MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Scripts\Battle\BattleSequence.cs" />
     <Compile Include="Scripts\Battle\BattleText.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -112,6 +125,13 @@
     <EmbeddedResource Include="Dialogue\TutorialDialogue.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>TutorialDialogue.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Scripts\Battle\BattleText.resx">
       <Generator>ResXFileCodeGenerator</Generator>
