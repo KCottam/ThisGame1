@@ -117,16 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ThiefHealthInfo" xml:space="preserve">
-    <value>His max health is 100.</value>
+  <data name="baseHealth" xml:space="preserve">
+    <value>100</value>
   </data>
-  <data name="ThiefInfo" xml:space="preserve">
-    <value>The thief is well-rounded.</value>
+  <data name="baseMana" xml:space="preserve">
+    <value>150</value>
   </data>
-  <data name="ThiefManaInfo" xml:space="preserve">
-    <value>His max mana is 100.</value>
+  <data name="baseStamina" xml:space="preserve">
+    <value>50</value>
   </data>
-  <data name="ThiefStaminaInfo" xml:space="preserve">
-    <value>His max stamina is 100.</value>
+  <data name="className" xml:space="preserve">
+    <value>Mage</value>
+  </data>
+  <data name="specialAbility1" xml:space="preserve">
+    <value>Freeze</value>
+  </data>
+  <data name="specialAbility2" xml:space="preserve">
+    <value>Chain Lightning</value>
   </data>
 </root>

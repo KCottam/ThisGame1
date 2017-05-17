@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GameInCSharp1.Dialogue {
+namespace GameInCSharp1.GUI.ClassControls {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace GameInCSharp1.Dialogue {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ReturningToTownDialogue {
+    internal class Thief {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ReturningToTownDialogue() {
+        internal Thief() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GameInCSharp1.Dialogue {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.Dialogue.ReturningToTownDialogue", typeof(ReturningToTownDialogue).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.GUI.ClassControls.Thief", typeof(Thief).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,65 +61,56 @@ namespace GameInCSharp1.Dialogue {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;We start walking to town.&gt;.
+        ///   Looks up a localized string similar to 100.
         /// </summary>
-        internal static string CommenceTravel {
+        internal static string baseHealth {
             get {
-                return ResourceManager.GetString("CommenceTravel", resourceCulture);
+                return ResourceManager.GetString("baseHealth", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;Edna&gt; A goblin! And it looks like it has company, too!.
+        ///   Looks up a localized string similar to 50.
         /// </summary>
-        internal static string EdnaGoblinExclamation {
+        internal static string baseMana {
             get {
-                return ResourceManager.GetString("EdnaGoblinExclamation", resourceCulture);
+                return ResourceManager.GetString("baseMana", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;A pack of goblins appear from the surrounding foilage!&gt;.
+        ///   Looks up a localized string similar to 150.
         /// </summary>
-        internal static string GoblinsAppear {
+        internal static string baseStamina {
             get {
-                return ResourceManager.GetString("GoblinsAppear", resourceCulture);
+                return ResourceManager.GetString("baseStamina", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;Edna&gt; The path from here is dangerous and you are hurt., Take this potion..
+        ///   Looks up a localized string similar to Thief.
         /// </summary>
-        internal static string HealYourself {
+        internal static string className {
             get {
-                return ResourceManager.GetString("HealYourself", resourceCulture);
+                return ResourceManager.GetString("className", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;Edna&gt; We shall now return to town, however..
+        ///   Looks up a localized string similar to Dash.
         /// </summary>
-        internal static string ReturnHome {
+        internal static string specialAbility1 {
             get {
-                return ResourceManager.GetString("ReturnHome", resourceCulture);
+                return ResourceManager.GetString("specialAbility1", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;We are currently in the middle of a dense forest. There could be danger at every step.&gt;.
+        ///   Looks up a localized string similar to Backstab.
         /// </summary>
-        internal static string SettingDescription {
+        internal static string specialAbility2 {
             get {
-                return ResourceManager.GetString("SettingDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;Edna&gt; What was that sound?.
-        /// </summary>
-        internal static string SoundNotification {
-            get {
-                return ResourceManager.GetString("SoundNotification", resourceCulture);
+                return ResourceManager.GetString("specialAbility2", resourceCulture);
             }
         }
     }

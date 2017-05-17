@@ -22,11 +22,6 @@ namespace GameInCSharp1.GUI
             InitializeComponent();
         }
 
-        private void ExitGameButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void MainFrame_Load(object sender, EventArgs e)
         {
             listPanel.Add(MainMenuPane);
@@ -42,23 +37,27 @@ namespace GameInCSharp1.GUI
             listPanel[0].Visible = true;
         }
 
+        private void ExitGameButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void MainMenuLoadGameButton_Click(object sender, EventArgs e)
         {
-            listPanel[1].Visible = true;
-            listPanel[0].Visible = false;
+            ShowPanel(1);
         }
 
         private void ReturnToMainMenuButton_Click(object sender, EventArgs e)
         {
-            listPanel[0].Visible = true;
-            listPanel[1].Visible = false;
+            ShowPanel(0);
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
-        }
+        }                       //none
 
+        #region nameInput
         private void NameInput_Enter(object sender, EventArgs e)
         {
             if (NameInput.Text == "<Hero Name>")
@@ -81,29 +80,29 @@ namespace GameInCSharp1.GUI
             {
                 createACharacterStepToEnable++;
             }
+            checkIfCharacterCreated();
         }
+        #endregion
 
         private void StartGameButton_Click(object sender, EventArgs e)
         {
-            listPanel[2].Visible = true;
-            listPanel[0].Visible = false;
+            ShowPanel(2);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listPanel[0].Visible = true;
-            listPanel[2].Visible = false;
-        }
+            ShowPanel(0);
+        }                                 //unused
 
         private void listBox2_Leave(object sender, EventArgs e)
         {
-
-        }
+            checkIfCharacterCreated();
+        }                 
 
         private void listBox2_MouseClick(object sender, MouseEventArgs e)
         {
 
-            switch (listBox2.SelectedIndex)
+            switch (LBxClassNames.SelectedIndex)
             {
                 case 0: //warior
                     AboutTabText.Text = "hoi. I am warriu!";
@@ -131,20 +130,52 @@ namespace GameInCSharp1.GUI
 
         private void CharacterCreationPane_MouseMove(object sender, MouseEventArgs e)
         {
+            
+
+        }                         //none
+
+        private void checkIfCharacterCreated()
+        {
             if (createACharacterStepToEnable == 2)
             {
-                button2.Enabled = true;
+                btnCreateYourHero.Enabled = true;
             }
             else
             {
-                button2.Enabled = false;
+                btnCreateYourHero.Enabled = false;
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e) //create your hero button
         {
+            RTxtBoxDialoguePane.AppendText("Hello, Hero. My name is Edna. I am here to help you save the world.");
+            ShowPanel(3);
+        }
 
+        private void ShowPanel(int index)
+        {
+            for (int i = 0; i < listPanel.Count; i++)
+            {
+                listPanel[i].Visible = false;
+                listPanel[i].Location = new Point(0, 0);
+            }
+            listPanel[index].Visible = true;
+        }
+
+        private void btnContinueDialogue_Click(object sender, EventArgs e)
+        {
+            int step = 0;
+            switch (step)
+            {
+                case 0:
+                    step++;
+                    RTxtBoxDialoguePane.AppendText("\n"+"We must leave this place!");
+                    break;
+                default:
+                    step=0;
+                    RTxtBoxDialoguePane.Text = "";
+                    break;
+            }
         }
     }
 }

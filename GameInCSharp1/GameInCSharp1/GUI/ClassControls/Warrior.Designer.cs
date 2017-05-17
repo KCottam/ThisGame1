@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GameInCSharp1.Scripts.Battle {
+namespace GameInCSharp1.GUI.ClassControls {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace GameInCSharp1.Scripts.Battle {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class BattleText {
+    internal class Warrior {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal BattleText() {
+        internal Warrior() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GameInCSharp1.Scripts.Battle {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.Scripts.Battle.BattleText", typeof(BattleText).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.GUI.ClassControls.Warrior", typeof(Warrior).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,83 +61,56 @@ namespace GameInCSharp1.Scripts.Battle {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1) Attack.
+        ///   Looks up a localized string similar to 150.
         /// </summary>
-        internal static string attackLabel {
+        internal static string baseHealth {
             get {
-                return ResourceManager.GetString("attackLabel", resourceCulture);
+                return ResourceManager.GetString("baseHealth", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Do an attack!.
+        ///   Looks up a localized string similar to 50.
         /// </summary>
-        internal static string DoAnAttack {
+        internal static string baseMana {
             get {
-                return ResourceManager.GetString("DoAnAttack", resourceCulture);
+                return ResourceManager.GetString("baseMana", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You have been encountered by {0}!.
+        ///   Looks up a localized string similar to 100.
         /// </summary>
-        internal static string EngagedInCombat {
+        internal static string baseStamina {
             get {
-                return ResourceManager.GetString("EngagedInCombat", resourceCulture);
+                return ResourceManager.GetString("baseStamina", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0}&apos;s health is {1}.
+        ///   Looks up a localized string similar to Warrior.
         /// </summary>
-        internal static string monsterHealth {
+        internal static string className {
             get {
-                return ResourceManager.GetString("monsterHealth", resourceCulture);
+                return ResourceManager.GetString("className", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2) Rest.
+        ///   Looks up a localized string similar to Iron Guard.
         /// </summary>
-        internal static string restLabel {
+        internal static string specialAbility1 {
             get {
-                return ResourceManager.GetString("restLabel", resourceCulture);
+                return ResourceManager.GetString("specialAbility1", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 3) Heal.
+        ///   Looks up a localized string similar to Charge.
         /// </summary>
-        internal static string specialLabel {
+        internal static string specialAbility2 {
             get {
-                return ResourceManager.GetString("specialLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your Health is {0}/{1}.
-        /// </summary>
-        internal static string yourHealth {
-            get {
-                return ResourceManager.GetString("yourHealth", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your Mana is {0}/{1}.
-        /// </summary>
-        internal static string yourMana {
-            get {
-                return ResourceManager.GetString("yourMana", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your Stamina is {0}/{1}.
-        /// </summary>
-        internal static string yourStamina {
-            get {
-                return ResourceManager.GetString("yourStamina", resourceCulture);
+                return ResourceManager.GetString("specialAbility2", resourceCulture);
             }
         }
     }

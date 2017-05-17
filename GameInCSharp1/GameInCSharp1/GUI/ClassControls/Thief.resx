@@ -117,19 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="WarriorHealthInfo" xml:space="preserve">
-    <value>His max health is 150, the highest of all of the classes.</value>
+  <data name="baseHealth" xml:space="preserve">
+    <value>100</value>
   </data>
-  <data name="WarriorInfo" xml:space="preserve">
-    <value>The warrior is strong, able to withstand numerous injuries.</value>
+  <data name="baseMana" xml:space="preserve">
+    <value>50</value>
   </data>
-  <data name="WarriorInfo2" xml:space="preserve">
-    <value>He is also hard-hitting, but lacks on the magical spectrum of the world.</value>
+  <data name="baseStamina" xml:space="preserve">
+    <value>150</value>
   </data>
-  <data name="WarriorManaInfo" xml:space="preserve">
-    <value>His max mana is a mere 50.</value>
+  <data name="className" xml:space="preserve">
+    <value>Thief</value>
   </data>
-  <data name="WarriorStaminaInfo" xml:space="preserve">
-    <value>His max stamina is 100.</value>
+  <data name="specialAbility1" xml:space="preserve">
+    <value>Dash</value>
+  </data>
+  <data name="specialAbility2" xml:space="preserve">
+    <value>Backstab</value>
   </data>
 </root>

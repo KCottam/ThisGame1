@@ -44,37 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dialogue\ClassInfo\PickAClass.Designer.cs">
+    <Compile Include="GUI\ClassControls\Mage.Designer.cs">
+      <DependentUpon>Mage.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PickAClass.resx</DependentUpon>
     </Compile>
-    <Compile Include="Dialogue\ClassInfo\ThiefAbout.Designer.cs">
+    <Compile Include="GUI\ClassControls\Thief.Designer.cs">
+      <DependentUpon>Thief.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ThiefAbout.resx</DependentUpon>
     </Compile>
-    <Compile Include="Dialogue\ClassInfo\MageAbout.Designer.cs">
+    <Compile Include="GUI\ClassControls\Warrior.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MageAbout.resx</DependentUpon>
+      <DependentUpon>Warrior.resx</DependentUpon>
     </Compile>
-    <Compile Include="Dialogue\ClassInfo\WarriorAbout.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>WarriorAbout.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Dialogue\ReturningToTownDialogue.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReturningToTownDialogue.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Dialogue\TutorialDialogue.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TutorialDialogue.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Dialogue\TutorialDialogueClass.cs" />
     <Compile Include="GUI\MainFrame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,45 +70,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Scripts\Battle\BattleSequence.cs" />
-    <Compile Include="Scripts\Battle\BattleText.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BattleText.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Scripts\GameBin.cs" />
     <Compile Include="Scripts\MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Variables\Monsters\Monster.cs" />
-    <Compile Include="Variables\PlayerVariables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\DataSources\GameInCSharp1.GUI.ClassControls.Mage.datasource" />
+    <None Include="Properties\DataSources\GameInCSharp1.GUI.ClassControls.Thief.datasource" />
+    <None Include="Properties\DataSources\GameInCSharp1.GUI.ClassControls.Warrior.datasource" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dialogue\ClassInfo\PickAClass.resx">
+    <EmbeddedResource Include="GUI\ClassControls\Mage.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>PickAClass.Designer.cs</LastGenOutput>
+      <LastGenOutput>Mage.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogue\ClassInfo\ThiefAbout.resx">
+    <EmbeddedResource Include="GUI\ClassControls\Thief.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ThiefAbout.Designer.cs</LastGenOutput>
+      <LastGenOutput>Thief.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogue\ClassInfo\MageAbout.resx">
+    <EmbeddedResource Include="GUI\ClassControls\Warrior.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>MageAbout.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogue\ClassInfo\WarriorAbout.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>WarriorAbout.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogue\ReturningToTownDialogue.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ReturningToTownDialogue.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogue\TutorialDialogue.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>TutorialDialogue.Designer.cs</LastGenOutput>
+      <LastGenOutput>Warrior.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MainFrame.resx">
       <DependentUpon>MainFrame.cs</DependentUpon>
@@ -133,11 +99,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Scripts\Battle\BattleText.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>BattleText.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Variables\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

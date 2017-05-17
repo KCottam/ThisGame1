@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GameInCSharp1.Dialogue.ClassInfo {
+namespace GameInCSharp1.GUI.ClassControls {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace GameInCSharp1.Dialogue.ClassInfo {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MageAbout {
+    internal class Mage {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MageAbout() {
+        internal Mage() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GameInCSharp1.Dialogue.ClassInfo {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.Dialogue.ClassInfo.MageAbout", typeof(MageAbout).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GameInCSharp1.GUI.ClassControls.Mage", typeof(Mage).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,38 +61,56 @@ namespace GameInCSharp1.Dialogue.ClassInfo {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to His max health is 75..
+        ///   Looks up a localized string similar to 100.
         /// </summary>
-        internal static string MageHealthInfo {
+        internal static string baseHealth {
             get {
-                return ResourceManager.GetString("MageHealthInfo", resourceCulture);
+                return ResourceManager.GetString("baseHealth", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The mage is weak, but makes up for it based on his many damaging abilities..
+        ///   Looks up a localized string similar to 150.
         /// </summary>
-        internal static string MageInfo {
+        internal static string baseMana {
             get {
-                return ResourceManager.GetString("MageInfo", resourceCulture);
+                return ResourceManager.GetString("baseMana", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to His max mana is 175..
+        ///   Looks up a localized string similar to 50.
         /// </summary>
-        internal static string MageManaInfo {
+        internal static string baseStamina {
             get {
-                return ResourceManager.GetString("MageManaInfo", resourceCulture);
+                return ResourceManager.GetString("baseStamina", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to His max stamina is 50..
+        ///   Looks up a localized string similar to Mage.
         /// </summary>
-        internal static string MageStaminaInfo {
+        internal static string className {
             get {
-                return ResourceManager.GetString("MageStaminaInfo", resourceCulture);
+                return ResourceManager.GetString("className", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Freeze.
+        /// </summary>
+        internal static string specialAbility1 {
+            get {
+                return ResourceManager.GetString("specialAbility1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chain Lightning.
+        /// </summary>
+        internal static string specialAbility2 {
+            get {
+                return ResourceManager.GetString("specialAbility2", resourceCulture);
             }
         }
     }

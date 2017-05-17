@@ -117,16 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MageHealthInfo" xml:space="preserve">
-    <value>His max health is 75.</value>
+  <data name="baseHealth" xml:space="preserve">
+    <value>150</value>
   </data>
-  <data name="MageInfo" xml:space="preserve">
-    <value>The mage is weak, but makes up for it based on his many damaging abilities.</value>
+  <data name="baseMana" xml:space="preserve">
+    <value>50</value>
   </data>
-  <data name="MageManaInfo" xml:space="preserve">
-    <value>His max mana is 175.</value>
+  <data name="baseStamina" xml:space="preserve">
+    <value>100</value>
   </data>
-  <data name="MageStaminaInfo" xml:space="preserve">
-    <value>His max stamina is 50.</value>
+  <data name="className" xml:space="preserve">
+    <value>Warrior</value>
+  </data>
+  <data name="specialAbility1" xml:space="preserve">
+    <value>Iron Guard</value>
+  </data>
+  <data name="specialAbility2" xml:space="preserve">
+    <value>Charge</value>
   </data>
 </root>
