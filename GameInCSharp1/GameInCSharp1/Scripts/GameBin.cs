@@ -12,8 +12,8 @@ namespace GameInCSharp1
         {
             AssignPlayerClass();
 
-            Console.WriteLine("DEBUG SKIP");
-            InputLine();
+            //Console.WriteLine("DEBUG SKIP");
+            //InputLine();
             ReturningToTownBeforeFight();
 
             Scripts.Battle.BattleSequence battle = new Scripts.Battle.BattleSequence("Goblin Boss",500,15);
